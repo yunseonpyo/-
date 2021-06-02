@@ -1,0 +1,13 @@
+/* COMMON */
+body {
+  height: 6000px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.inner{
+  width: 1100px;
+  margin:0 auto;
+  position: relative;
+}
+img{
+  display: block;
+}
