@@ -195,4 +195,16 @@ header .main-menu .item .item__contents .contents__texture p{
   margin :4px 0px 14px;
 }
 
+header .badges{
+  position: fixed;
+  right: 12px;
+  top:132px;
+}
 
+header .badges .badge{
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+}
