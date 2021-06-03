@@ -8,6 +8,7 @@ header{
   top:0;
   background-color: #F6F5F0;
   border-bottom: 1px solid #c8c8c8;
+  z-index: 9;
 }
 header > .inner{
   height: 120px;
@@ -32,8 +33,8 @@ header .inner .logo{
   포지션 값 absolute 
   width 가로값을 설정 
   left,right 값 0으로 설정 
-  left-top ,right-bottom 값 0으로 설정 
- */
+  left-top ,right-bottom 값 0으로 설정
+ */ 
 
  header .sub-menu{
   position: absolute;

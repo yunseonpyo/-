@@ -39,3 +39,14 @@ window.addEventListener("scroll",_.throttle(function () {
 // gsap.to(요소,지속시간,옵션) => 옵션은 객체 데이터
 // opacity 속성처럼 값을 숫자로 입력하는 속성은 전환효과를 통해 , 요송의 전/후 상태를 중간 숫자의 값으로 자연스럽게 만들어 줄수 있지만 
 // display 속성처럼 값이 숫자가 아닌 속성은 전/후 상태의 중간값이 존재하지 않기 때문에, 자연스러운 전환효고랄 적용할수 없다.
+
+
+// 순차적 애니메이션 
+const fadEls =document.querySelectorAll(".visual .fade-in");
+fadEls.forEach(function (fadeEl,index) {
+  //gsap.to(요소,지속시간,옵션)
+  gsap.to(fadeEl,1,{
+    delay:(index+1)*0.7, // delay 값만큼 지연
+    opacity:1
+  })
+})
