@@ -15,6 +15,7 @@ inputEl.addEventListener("blur",function () {
   inputEl.setAttribute("placeholder","")
 })
 
+
 // 스크롤 없애기
 
 const badgeEl = document.querySelector("header .badges");
