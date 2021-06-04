@@ -20,7 +20,6 @@ inputEl.addEventListener("blur",function () {
 const badgeEl = document.querySelector("header .badges");
 
 window.addEventListener("scroll",_.throttle(function () {
-  console.log(window.scrollY)
   if(window.scrollY >500) {
     //배지 숨기기
     gsap.to(badgeEl,.6 ,{
@@ -50,3 +49,35 @@ fadEls.forEach(function (fadeEl,index) {
     opacity:1
   })
 })
+
+new Swiper(".notice .notice-line .mySwiper", {
+  direction: "vertical",
+  autoplay:true,
+  loop:true
+});
+
+new Swiper(".promotion .swiper-container", {
+  direction:"horizontal", //기본값
+  slidesPerView: 3, //한번에 보여줄 슬라이드 개수
+  centeredSlides:true, //1번 슬라이드가 가운데 보이기
+  loop:true, //반복재생
+  autoplay:{
+    delay:5000
+  }, // autoPlay 에 값을 객체로 delay:3000(기본값) 설정으로 반복시간을 설정할수 있다.
+  pagination:{   //페이지 설정 
+    el:".promotion .swiper-pagination",
+    clickable:true
+  },navigation:{  // 전,후 네비게이터
+    prevEl:".notice .promotion .arrow-back",
+    nextEl:".notice .promotion .arrow-forward"
+  }
+});
+
+
+const toggleEl = document.querySelector(".notice-line .inner-right .toggle-promotion");
+const promotionEl = document.querySelector(".promotion")
+
+toggleEl.addEventListener("click",function () {
+  promotionEl.classList.toggle("hide");
+})
+
