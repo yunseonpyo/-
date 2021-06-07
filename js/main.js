@@ -56,6 +56,7 @@ new Swiper(".notice .notice-line .mySwiper", {
   loop:true
 });
 
+ 
 new Swiper(".promotion .swiper-container", {
   direction:"horizontal", //기본값
   slidesPerView: 3, //한번에 보여줄 슬라이드 개수
