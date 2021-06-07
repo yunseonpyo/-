@@ -1,0 +1,92 @@
+.rewards{
+  position: relative;
+
+}
+.rewards .bg-left{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #272727;
+  top:0;
+  left: 0;
+}
+.rewards .bg-right{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #d5c798;
+  top:0;
+  right: 0;
+}
+.rewards .inner{
+  height: 241px;
+  background-image: url("../images/rewards.jpg");
+}
+
+.rewards .inner .btn-group{
+  position: absolute;
+  right: 0;
+  bottom:24px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+.rewards .inner .btn-group .sign-up{
+  margin-right: 10px;
+  height: 46px;
+}
+.rewards .inner .btn-group .sign-in{
+  width: 110px;
+  height: 46px;
+}
+.rewards .inner .btn-group .gift{
+  margin-top: 10px;
+  flex-grow: 1;
+  height: 46px;
+}
+
+/* YOTUBE  */
+.youtube{
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.youtube .youtube-area{
+  width: 1920px;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  bottom:50%;
+  margin-bottom:calc(1920px * 9/16/-2);
+}
+
+.youtube .youtube-area::before{
+  content: "";
+  display: block;  
+  /* 가상요소는 인라인 요소이므로 block으로 바꿔줘야함 */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+/* ::before (:before)
+CSS에서, ::before는 선택한 요소의 첫 자식으로 의사 요소를 하나 생성합니다. 
+보통 content 속성과 함께 짝지어, 요소에 장식용 콘텐츠를 추가할 때 사용합니다. 기본값은 인라인입니다. */
+
+.youtube .youtube-cover{
+  background-image: url("../images/video_cover_pattern.png");
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+}
+#player{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
